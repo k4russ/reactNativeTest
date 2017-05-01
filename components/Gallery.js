@@ -46,12 +46,12 @@ class Gallery extends Component {
                             bounces={true}
                             onScroll={this.onScroll.bind(this)}
                             scrollEventThrottle={16}
-                            style={{position:'absolute', top:0, left:0,bottom:0, right: 0}}>
-                    <Image style={{width: this.state.viewWidth, top: 0, height: this.state.viewHeight, resizeMode: 'cover'}} source={require('./img/img1.jpg')} />
-                    <Image style={{width: this.state.viewWidth, top: 0, height: this.state.viewHeight, resizeMode: 'cover'}} source={require('./img/img2.jpg')} />
-                    <Image style={{width: this.state.viewWidth, top: 0, height: this.state.viewHeight, resizeMode: 'cover'}} source={require('./img/img3.jpg')} />
+                            style={{position:'absolute', top:0, left:0,bottom:-21, right: 0}}>
+                    <Image style={{width: this.state.viewWidth, top: 0, height: this.state.viewHeight - 21, resizeMode: 'cover'}} source={require('../img/img1.jpg')} />
+                    <Image style={{width: this.state.viewWidth, top: 0, height: this.state.viewHeight - 21, resizeMode: 'cover'}} source={require('../img/img2.jpg')} />
+                    <Image style={{width: this.state.viewWidth, top: 0, height: this.state.viewHeight - 21, resizeMode: 'cover'}} source={require('../img/img3.jpg')} />
                 </ScrollView>
-                <PageControl style={{position:'absolute', left:0, right:0, bottom:-15}}
+                <PageControl style={{position:'absolute', left:0, right:0, bottom:0}}
                              numberOfPages={3}
                              currentPage={this.state.currentPage}
                              hidesForSinglePage={true}
